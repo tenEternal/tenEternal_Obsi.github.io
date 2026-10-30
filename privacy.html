@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Personal OAuth configuration for syncing Obsidian notes through GSync and Google Drive.">
+<title>Privacy Policy | Personal GSync OAuth</title><style>
+:root{color-scheme:light;--ink:#202033;--sub:#63657a;--purple:#6940b6;--border:#e3e1ec;--bg:#f7f5fa;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.75}
+main{max-width:840px;margin:70px auto 65px;padding:0 24px}.top{font-size:.86rem;letter-spacing:.1em;text-transform:uppercase;color:var(--purple);font-weight:750}
+.header h1{font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.2;letter-spacing:-.03em;margin:12px 0 16px}.lead{font-size:1.1rem;color:var(--sub);max-width:700px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:30px;margin-top:28px;box-shadow:0 5px 25px rgba(45,30,67,.035)}
+h2{font-size:1.23rem;margin:0 0 12px}h3{font-size:1.08rem;margin:20px 0 8px}p{margin:9px 0 16px}ul{padding-left:20px}li{margin:8px 0}
+a{color:var(--purple);text-underline-offset:3px}.pill{display:inline-block;background:#ede7f8;color:#55358c;border-radius:30px;padding:5px 11px;font-size:.82rem;font-weight:650;margin:9px 0}
+nav,footer{display:flex;gap:18px;flex-wrap:wrap}nav{margin-top:28px}nav a{background:white;border:1px solid var(--border);border-radius:10px;padding:7px 14px;text-decoration:none;font-weight:600}nav a:hover{border-color:var(--purple)}footer{color:var(--sub);font-size:.86rem;margin-top:36px}footer a{color:var(--sub)}
+.note{background:#f7f3fd;border-left:3px solid var(--purple);padding:13px 16px;border-radius:4px}code{background:#f0ecf4;padding:2px 5px;border-radius:5px;overflow-wrap:anywhere}
+@media(max-width:620px){main{margin:40px auto}.card{padding:22px}nav{gap:8px}}
+</style></head>
+<body><main><div class="top">Personal Google OAuth Client · GSync</div><div class="header"><h1>Privacy Policy</h1><p class="lead">How this personal OAuth client and the GSync plugin handle Google account and Google Drive data.</p></div>
+<nav aria-label="Pages"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+<section class="card"><p><strong>Effective date:</strong> October 30, 2026</p>
+<h2>1. Purpose and operator</h2><p>This site describes a Google OAuth client configured for personal use with the independently maintained, open-source Obsidian GSync plugin. This site does not represent an official service by Obsidian, Google, or GSync's author. Contact: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a> (replace before publishing).</p>
+<h2>2. Google data accessed</h2><p>With the user's consent, GSync requests the <code>https://www.googleapis.com/auth/drive</code> scope, which can grant access to the user's Google Drive files. The plugin uses this permission to locate and synchronize files in the Google Drive folder selected in its settings, including reading, creating, updating and moving deleted files to trash.</p>
+<h2>3. How data is used and shared</h2><p>Synced files are transferred by the plugin between the user's device and the Google Drive API. This OAuth configuration does not operate its own backend, advertising service, analytics service, or sell Google user data. Google processes data as the Drive provider. During sign-in, a static callback page may receive a one-time OAuth authorization code in its URL and pass it to the locally installed Obsidian application. The static hosting provider may process standard access logs under its own policies.</p>
+<h2>4. Storage and retention</h2><p>GSync keeps OAuth client information and refresh tokens locally on each device in the Obsidian plugin settings, including <code>.obsidian/plugins/gsync/data.json</code>. Synced notes are stored on the user's device and in the selected Google Drive location. This website itself does not store synced note content or operate a token database. Google Drive content remains until the user changes or deletes it, subject to Google Drive's retention policies.</p>
+<h2>5. Security</h2><p>The OAuth callback is delivered using HTTPS. The callback page uses client-side logic to forward sign-in information to Obsidian. The user should protect local Obsidian data, keep credentials private and only use trusted devices. Google Drive access tokens can grant broad access and must not be shared.</p>
+<h2>6. User controls and revocation</h2><p>The user can stop using the plugin, delete synchronized notes, and revoke this app's Google access at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Local token records can be cleared in Obsidian's plugin settings. Revoking authorization does not automatically delete Google Drive content.</p>
+<h2>7. Changes and questions</h2><p>This policy will be updated if the configuration's data processing behavior changes. For questions, contact <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>.</p>
+</section><section class="card"><h2>개인정보처리 요약 (한국어)</h2>
+<p>이 개인용 OAuth 설정은 GSync가 Google Drive API에 접근하여 사용자가 지정한 폴더의 Obsidian 파일을 동기화하는 용도로 사용됩니다. GSync는 폴더 단위로 동작하지만 Google Drive 전체 접근 권한을 요청합니다.</p>
+<p>인증 토큰은 사용자의 기기 내 Obsidian 플러그인 설정에 저장되며, 이 웹사이트는 노트 내용을 별도 서버에 수집하지 않습니다. 인증 중 정적 콜백 페이지가 일회성 인증 코드를 처리하며 호스팅 업체의 일반 접속 로그가 존재할 수 있습니다. Google 계정의 <a href="https://myaccount.google.com/permissions">보안 설정</a>에서 접근 권한을 취소할 수 있습니다.</p></section>
+
+<footer><span>Personal OAuth integration, not an official Obsidian or GSync service.</span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></footer>
+</main></body></html>
